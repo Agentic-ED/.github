@@ -11,7 +11,7 @@ We recommend that you start with the work you want to do. An **agent skill** giv
 
 ## Find your Guild
 
-Each Guild focuses on one area of practice and takes its name from a group of animals. The animal is also the guild’s AI steward. Members choose priorities, the steward helps review contributions, and human leads oversee routine releases.
+Each Guild focuses on one area of practice and takes its name from a group of animals. The animal is also the guild’s AI steward. Members choose priorities, the steward helps review contributions, and Human leaders of the Guild approve releases. That's a high level take on it, but there are mechanics associated with AI budgets, membership voting, and project prioritizations. 
 
 | If you work on… | Explore | Steward |
 |---|---|---|
