@@ -1,0 +1,56 @@
+name: Propose a project
+description: Bring an idea this Guild could build. Members rank projects, and each one-week sprint the steward builds for the top 3.
+title: "Project: "
+labels: ["project"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        A project is a piece of work the Guild takes on together, such as a new skill, an agent, or a release.
+
+        **What happens next.** A lead checks that it fits the Guild's scope. Then it joins the Guild's backlog, where members rank it. Each one-week sprint, the Guild's steward agent builds for the top 3 projects, within the Guild's AI build budget. A person reviews and merges every change.
+
+        **No vote needed to contribute.** You can build with your own AI and open a pull request at any time.
+  - type: input
+    id: starts-from
+    attributes:
+      label: Starts from
+      description: An issue, a repository, a skill or agent version, or a pull request this builds on. Optional.
+      placeholder: "assessment-alignment@1.0.0, issue #57"
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Intended outcome
+      description: What the Guild gets when this is done.
+      placeholder: The skill checks alignment across a whole course and reports gaps between modules. Released as assessment-alignment@1.1.0.
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: What's in, and what's out.
+      placeholder: "Courses up to 12 modules. Out of scope: prerequisite checking."
+    validations:
+      required: true
+  - type: textarea
+    id: criteria
+    attributes:
+      label: Acceptance criteria
+      description: "How a lead will judge it done. Be specific: tests, samples, a release."
+      placeholder: All 24 sample outlines pass. No regression on the 1.0 evaluation cases. A lead signs the release.
+    validations:
+      required: true
+  - type: textarea
+    id: steward-task
+    attributes:
+      label: A task for the steward (optional)
+      description: Something the steward could do in a sprint. The lead decides what goes on the sprint plan and sets its cap.
+      placeholder: Check 1.1.0 against the 24 sample outlines.
+  - type: checkboxes
+    id: conduct
+    attributes:
+      label: Code of Conduct
+      options:
+        - label: I agree to follow the [Code of Conduct](https://agentic-ed.org/code-of-conduct).
+          required: true

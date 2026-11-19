@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: How Guilds work
+    url: https://agentic-ed.org/how
+    about: Projects, sprints, the steward and the budget, in plain words.
+  - name: Guild Governance
+    url: https://agentic-ed.org/guild-governance
+    about: Who decides what, and how votes and elections work.

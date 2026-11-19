@@ -1,0 +1,36 @@
+name: Feature
+description: Something a skill or agent should do that it doesn't do yet.
+type: Feature
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What should it do?
+      description: Describe the change from the point of view of the person using the skill or agent.
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Who does it help, and how?
+      description: The learners, teams or work it makes better.
+    validations:
+      required: true
+  - type: input
+    id: skill
+    attributes:
+      label: Which skill or agent?
+      placeholder: "assessment-alignment@1.0.0"
+  - type: input
+    id: project
+    attributes:
+      label: Part of a project?
+      description: Link the project issue, if there is one. Optional.
+      placeholder: "#57"
+  - type: checkboxes
+    id: conduct
+    attributes:
+      label: Code of Conduct
+      options:
+        - label: I agree to follow the [Code of Conduct](https://agentic-ed.org/code-of-conduct).
+          required: true
